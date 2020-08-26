@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" type="text/css" href="lista.css">
+</head>
+<body>
+    <div>
+        <label for="nuevaTarea">Nueva tarea</label>
+        <input id="nuevaTarea" name="nuevaTarea"/>
+        <button id="anadirTarea" onclick="anadirTarea()">Añadir</button>
+    </div>
+    <div class="lista">
+        <ul id="listaTareas">
+            <li>Tarea 1
+                <button onclick="marcarImportante(event)">Marcar importante</button>
+                <button onclick="eliminarTarea(event)">Eliminar</button>
+            </li>
+            <li class="importante">Tarea 2
+            <button onclick="eliminarTarea(event)">Eliminar</button>
+            </li>
+        </ul>
+    </div>
+    <script src="lista.js"></script>
+</body>
+</html>
